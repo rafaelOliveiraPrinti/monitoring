@@ -6,6 +6,6 @@ const routes = Router();
 routes.get('/', (req, res) => {res.send({message: 'Hello Printi Monitoring' })});
 
 routes.get('/monitoring/all', monitoringController.getAll);
-routes.get('/monitoring', monitoringController.post);
+routes.post('/monitoring', monitoringController.post);
 
 module.exports = routes;

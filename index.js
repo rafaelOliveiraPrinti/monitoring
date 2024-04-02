@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(routes);
 
-mongoose.connect('mongodb+srv://printi:4OXkaXwE8wGRv8Ag@printimonitoring.w7umi2d.mongodb.net/?retryWrites=true&w=majority&appName=PrintiMonitoring' || '').then((response) => {
+mongoose.connect(process.env.MONGO_DB_CONNECTION || '').then((response) => {
   console.log('Mongo connected');
 }).catch((e) => {
   console.log(e);

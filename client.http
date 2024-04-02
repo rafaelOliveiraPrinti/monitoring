@@ -8,16 +8,17 @@ content-type: application/json
 
 ###
 
-GET http://localhost:8888/monitoring
+POST http://localhost:8888/monitoring
 content-type: application/json
 
 {
   "type": "alert",
   "body": {
+    "project": "alpha-next",
     "env":"production",
     "type": "alert",
     "description": "",
-    "tool": "",
-    "severity": ""
+    "tool": "Zabbix",
+    "severity": "biggest"
   }
 }

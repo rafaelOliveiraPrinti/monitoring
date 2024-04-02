@@ -8,5 +8,5 @@ const MonitoringSchema = new Schema({
   date: Date
 });
 
-module.exports = mongoose.Model('monitoring', MonitoringSchema)
+module.exports = mongoose.model('monitoring', MonitoringSchema)
 
