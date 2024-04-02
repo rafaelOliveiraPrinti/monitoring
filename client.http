@@ -1,0 +1,23 @@
+GET http://localhost:8888
+content-type: application/json
+
+###
+
+GET http://localhost:8888/monitoring/all
+content-type: application/json
+
+###
+
+GET http://localhost:8888/monitoring
+content-type: application/json
+
+{
+  "type": "alert",
+  "body": {
+    "env":"production",
+    "type": "alert",
+    "description": "",
+    "tool": "",
+    "severity": ""
+  }
+}
